@@ -28,3 +28,14 @@ npm run dev
 ```
 Open: http://localhost:3000
 
+### Notes
+- PDF text extraction quality depends on PDF formatting.
+- Web extraction uses readability; some pages may block scraping.
+- Everything is designed to be simple and extendable.
+
+### Roadmap
+- Export to Markdown
+- Collections/folders
+- Better PDF extraction for scanned docs (OCR optional)
+- Auth (optional)
+- Scheduled digests
