@@ -1,2 +1,30 @@
-# flowbit-ai-second-brain
-A minimal AI “Second Brain” web app that turns PDFs, links, and notes into a searchable knowledge system.
+# Flowbit AI Second Brain (Flowbit Labs)
+
+A minimal, modern web app that turns PDFs, web links, and notes into a searchable knowledge system with AI summaries + semantic search.
+
+## Features
+- Ingest: PDF uploads, URLs, text notes
+- AI processing: summary, takeaways, tags
+- Search: keyword + semantic (embeddings)
+- Ask: ask questions across your library with cited sources
+- Local-first: metadata in SQLite, vectors in ChromaDB
+
+## Quickstart
+
+### Backend
+```bash
+cd backend
+cp .env.example .env
+# add OPENAI_API_KEY in backend/.env
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Open: http://localhost:3000
+
